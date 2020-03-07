@@ -38,4 +38,4 @@ hci_uart-$(CONFIG_BACKPORT_BT_HCIUART_INTEL)	+= hci_intel.o
 hci_uart-$(CONFIG_BACKPORT_BT_HCIUART_BCM)	+= hci_bcm.o
 hci_uart-objs				:= $(hci_uart-y)
 
-ccflags-y += -D__CHECK_ENDIAN__
+ccflags-y += -D__CHECK_ENDIAN__ -Wno-unused-variable
